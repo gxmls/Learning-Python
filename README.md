@@ -1,2 +1,2 @@
 # Learning-Python
-J'apprends le python
+Je m'apprends le python
