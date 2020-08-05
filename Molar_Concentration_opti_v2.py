@@ -31,6 +31,7 @@ while v_unit=='L' or 'l' or v_unit=='mL' or 'ml' or v_unit=='uL' or 'ul':
         break
     else:
         v_unit=input('Please input valid volume unit: ')
+#Note: have to write v_unit=='' before every unit or the result returns error.
 MW=float(input('Please input Molecular Weight(g): '))
 print(f'Adding {round(concentration*volume*MW,6)} g into {FV} {v_unit}, getting {FC} {c_unit} solution.')
-
+#Note: if only use concentration*volume*MW, the result is in error, use round() to control the dicimal is better.
