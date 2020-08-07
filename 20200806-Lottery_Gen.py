@@ -3,7 +3,7 @@ print('This is a Lottery Generator.')
 while True:
     go_on=False
     num=int(input('Please enter the number of Lottery tickets: '))
-    if num>1:
+    if num>=1:
         break
     else:
         go_on=False
