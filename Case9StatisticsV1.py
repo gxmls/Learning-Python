@@ -19,7 +19,7 @@ def dev(numbers,mean): #计算标准方差
     return pow(sdev/(len(numbers)-1),0.5)
 
 def median(numbers): #计算中位数
-    sorted(numbers)
+    numbers=sorted(numbers) #或者使用numbers.sort()
     size=len(numbers)
     if size%2==0:
         med=(numbers[size//2-1]+numbers[size//2])/2
