@@ -6,7 +6,8 @@ f=open("新时代中国特色社会主义.txt","r",encoding="utf-8")
 t=f.read()
 f.close()
 ls=jieba.lcut(t)
-for word in ls:
+ls2=ls[:]
+for word in ls2:
     if len(word)==1:
         ls.remove(word)
 txt=" ".join(ls)
